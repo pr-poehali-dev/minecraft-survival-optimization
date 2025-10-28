@@ -1,0 +1,18 @@
+{
+  "tests": [
+    {
+      "name": "Test get players",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "action": "getPlayers"
+      },
+      "expectedStatus": 200,
+      "expectedBody": {
+        "action": "string",
+        "players": []
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
